@@ -1,0 +1,9 @@
+id: corridor
+task:
+- name: corridor
+  type: waypoint_following
+  waypoints:
+  - {id: corridor-point-0, x: 5.8, y: 0.15000000000000002, yaw: 0, z: 0}
+  - {id: corridor-point-1, x: 5.8, y: -0.15000000000000002, yaw: 0, z: 0}
+  - {id: corridor-point-2, x: -5.8, y: -0.15000000000000002, yaw: 0, z: 0}
+  - {id: corridor-point-3, x: -5.8, y: 0.15000000000000002, yaw: 0, z: 0}
