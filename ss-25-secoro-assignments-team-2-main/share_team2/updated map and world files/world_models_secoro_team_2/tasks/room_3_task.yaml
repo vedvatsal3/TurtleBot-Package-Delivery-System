@@ -1,9 +1,0 @@
-id: room_3
-task:
-- name: room_3
-  type: waypoint_following
-  waypoints:
-  - {id: room_3-point-0, x: 1.949999999999999, y: 5.35, yaw: 0, z: 0}
-  - {id: room_3-point-1, x: 1.9500000000000002, y: 1.75, yaw: 0, z: 0}
-  - {id: room_3-point-2, x: 0.7000000000000002, y: 1.75, yaw: 0, z: 0}
-  - {id: room_3-point-3, x: 0.6999999999999991, y: 5.35, yaw: 0, z: 0}
