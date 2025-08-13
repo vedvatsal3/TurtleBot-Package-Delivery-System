@@ -1,0 +1,9 @@
+id: room_1
+task:
+- name: room_1
+  type: waypoint_following
+  waypoints:
+  - {id: room_1-point-0, x: 1.8, y: 0.55, yaw: 0, z: 0}
+  - {id: room_1-point-1, x: 1.8, y: -0.55, yaw: 0, z: 0}
+  - {id: room_1-point-2, x: -1.8, y: -0.55, yaw: 0, z: 0}
+  - {id: room_1-point-3, x: -1.8, y: 0.55, yaw: 0, z: 0}
