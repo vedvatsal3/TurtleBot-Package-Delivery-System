@@ -1,8 +1,8 @@
-# Robot Delivery Project – SS-25 Secoro Assignments (Team 2)
+# Robot Package Delivery Project – S
 
 ## Overview
 This project was implemented as part of a university subject and is **still under construction**.  
-The primary goal is to develop and simulate a robot delivery system using TurtleBot4 and ROS 2, integrating navigation, behavior trees, and autonomous task execution.
+The primary goal is to develop and simulate a robot delivery system using TurtleBot4 and ROS 2, integrating navigation, behavior trees and a cool user interface where a server node autonomously controls the environment while controlling which robot to choose for delivery depending on battery status and similar destination.
 
 ## Repository Structure
 - **`ss-25-secoro-assignments-team-2/secoro_ws`** –  
