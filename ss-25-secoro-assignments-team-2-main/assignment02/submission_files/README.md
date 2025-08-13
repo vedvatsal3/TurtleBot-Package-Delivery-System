@@ -50,7 +50,7 @@ docker run -v ./world_models_secoro_team_2:/usr/src/app/output \
 We did **not edit** any launch file. To start the simulation, we ran:
 
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py     nav2:=true     slam:=false     localization:=true     rviz:=true     world:=secoro_team_2     gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 map:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml
+ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py     nav2:=true     slam:=false     localization:=true     rviz:=true     world:=secoro_team_2     gz_resource_path:=/home/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 map:=/home/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml
 ```
 
 In another terminal tab, we ran:
