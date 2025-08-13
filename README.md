@@ -1,4 +1,4 @@
-# Robot Package Delivery Project – S
+# Robot Package Delivery Project 
 
 ## Overview
 This project was implemented as part of a university subject and is **still under construction**.  
