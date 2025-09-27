@@ -86,13 +86,13 @@ ros2 param set /george/diffdrive_controller cmd_vel_timeout 2.0
 
 1. spawn george in room Tabl_256 and the world model (TAB office)  in gazebo 
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py world:=secoro_team_2 use_sim_time:=true  namespace:=george x:=-2.25 y:=-2.4 y=0.0 yaw=0 gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
+ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py world:=secoro_team_2 use_sim_time:=true  namespace:=george x:=-2.25 y:=-2.4 y=0.0 yaw=0 gz_resource_path:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
 
 
 ```
 2. spawn fred in the same world in room 251
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=-2.55 y:=2.2 world:=secoro_team_2 gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
+ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=-2.55 y:=2.2 world:=secoro_team_2 gz_resource_path:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
 ```
 
 ## 2. launch localization and navigation for george
@@ -101,12 +101,12 @@ ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=
 
 
 ```bash
-ros2 launch turtlebot4_navigation localization.launch.py namespace:=fred map:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml use_sim_time:=false
+ros2 launch turtlebot4_navigation localization.launch.py namespace:=fred map:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml use_sim_time:=false
 
 ```
 on real robot:
 ```bash
-ros2 launch turtlebot4_navigation localization.launch.py namespace:=fred map:=/home/sireen/secoro/secoro_ws/src/turtlebot4/turtlebot4_navigation/maps/secorolab_minimal.yaml
+ros2 launch turtlebot4_navigation localization.launch.py namespace:=fred map:=/path to your file /secoro_ws/src/turtlebot4/turtlebot4_navigation/maps/secorolab_minimal.yaml
 
 ```
 
@@ -202,11 +202,11 @@ ros2 run delivery_interface secoro_delivery_interface   --ros-args --remap __ns:
 1. spawn george in room Tabl_251 and the world model (TAB office)  in gazebo 
 
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py     nav2:=true     slam:=false     localization:=true     rviz:=true use_sim_time:=true     world:=secoro_team_2  namespace:=george x:=-2.55 y:=2.2     gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 map:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml
+ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py     nav2:=true     slam:=false     localization:=true     rviz:=true use_sim_time:=true     world:=secoro_team_2  namespace:=george x:=-2.55 y:=2.2     gz_resource_path:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 map:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml
 ```
 2. spawn fred in the same world in room 256
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=-2.25 y:=-2.4 world:=secoro_team_2 gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
+ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=-2.25 y:=-2.4 world:=secoro_team_2 gz_resource_path:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
 ```
 
 3. Estimate the initila postition of george (paasing initial pose)
@@ -257,13 +257,13 @@ ros2 param set /george/diffdrive_controller cmd_vel_timeout 2.0
 
 1. spawn george in room Tabl_256 and the world model (TAB office)  in gazebo 
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py world:=secoro_team_2 use_sim_time:=true  namespace:=george x:=-2.25 y:=-2.4 y=0.0 yaw=0 gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
+ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py world:=secoro_team_2 use_sim_time:=true  namespace:=george x:=-2.25 y:=-2.4 y=0.0 yaw=0 gz_resource_path:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
 
 
 ```
 2. spawn fred in the same world in room 251
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=-2.55 y:=2.2 world:=secoro_team_2 gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
+ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=-2.55 y:=2.2 world:=secoro_team_2 gz_resource_path:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 
 ```
 
 ## 2. launch localization and navigation for george
@@ -272,7 +272,7 @@ ros2 launch turtlebot4_gz_bringup turtlebot4_spawn.launch.py namespace:=fred x:=
 
 
 ```bash
-ros2 launch turtlebot4_navigation localization.launch.py namespace:=george map:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml use_sim_time:=true
+ros2 launch turtlebot4_navigation localization.launch.py namespace:=george map:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml use_sim_time:=true
 
 ```
 
@@ -377,7 +377,7 @@ docker run -v ./world_models_secoro_team_2:/usr/src/app/output \
 We did **not edit** any launch file. To start the simulation, we ran:
 
 ```bash
-ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py     nav2:=true     slam:=false     localization:=true     rviz:=true     world:=secoro_team_2     gz_resource_path:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 map:=/home/sireen/secoro/secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml
+ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py     nav2:=true     slam:=false     localization:=true     rviz:=true     world:=secoro_team_2     gz_resource_path:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/models:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/gazebo/worlds:/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2 map:=/path to your file /secoro_ws/src/turtlebot4_simulator/turtlebot4_gz_bringup/world_models_secoro_team_2/maps/secoro_team_2.yaml
 ```
 
 In another terminal tab, we ran:
