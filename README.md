@@ -27,14 +27,14 @@ Follow these step-by-step to set up your environment and run the project success
 - Core simulation environment inclusive of spawnning of 2 turtlebot4 & docking stations, navigation, localization and user interface set up in ROS 2 Jazzy with TurtleBot4.
 - We have 2 approaches:
   ### 1. Basic Single Terminal Delivery
-- **Description**: Completely working basic delivery system
+- **Completely working basic delivery system**
 - **Location**: `ss-25-secoro-assignments-team-2/secoro_ws/src/delivery_interface/delivery_interface/delivery_commander.py`
 - **Command to run**: 
   ```bash
   ros2 run delivery_interface delivery_commander
   
-  #### Approach 2: Advanced Multi-Terminal  
-- **Description**: Secure server-client system with IDs, PINs, battery management, and optimized failure handling
+### Approach 2: Advanced Multi-Terminal  
+- **Secure server-client system with IDs, PINs, battery management, and optimized failure handling**
 - **Location**: `ss-25-secoro-assignments-team-2/assignment04/submission_files/secoro2_delivery_system/src/servers`
 - **Command to run**: 
   ```bash
