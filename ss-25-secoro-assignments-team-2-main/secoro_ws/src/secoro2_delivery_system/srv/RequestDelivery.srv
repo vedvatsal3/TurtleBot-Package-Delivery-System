@@ -1,0 +1,12 @@
+# REQUEST
+string sender_name
+string sender_room
+string receiver_name
+string receiver_room
+---
+# RESPONSE
+bool accepted
+string assigned_robot
+string process_id
+string pin
+string message

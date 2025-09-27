@@ -1,0 +1,8 @@
+# REQUEST
+string process_id
+string pin
+string role   # "sender" or "receiver"
+---
+# RESPONSE
+bool ok
+string message

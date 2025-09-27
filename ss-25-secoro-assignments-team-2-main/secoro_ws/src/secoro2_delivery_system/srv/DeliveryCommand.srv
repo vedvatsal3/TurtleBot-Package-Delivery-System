@@ -1,0 +1,7 @@
+# REQUEST
+string pickup_room
+string delivery_room
+---
+# RESPONSE
+bool accepted
+string assigned_robot

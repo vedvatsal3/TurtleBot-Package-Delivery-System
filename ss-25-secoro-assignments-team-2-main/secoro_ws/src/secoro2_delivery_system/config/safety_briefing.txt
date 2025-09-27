@@ -1,0 +1,5 @@
+- Robot carries up to 2 kg and 30x30x30 cm.
+- Secure the package to prevent slipping or falling.
+- Do not touch the robot while it is moving.
+- Keep pathways clear during operation.
+- Follow local lab safety rules at all times.

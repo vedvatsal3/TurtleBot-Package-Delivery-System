@@ -1,0 +1,72 @@
+<root BTCPP_format="3"  main_tree_to_execute="DeliveryRoot">
+  <BehaviorTree ID="DeliveryRoot">
+    <Sequence name="DeliverySequence">
+      <AssignRobot/>
+      <InitializeProcess/>
+      <Timeout msec="180000">
+        <AwaitSenderSignin/>
+      </Timeout>
+      <SubTree ID="GoToSender"/>
+      <SubTree ID="GoToReceiver"/>
+      <CompleteProcess/>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="GoToSender">
+    <Sequence>
+      <NavigateToDoor room="{sender_room}"/>
+      <Fallback>
+        <NavigateIntoRoom room="{sender_room}"/>
+        <Sequence>
+          <Notify text="Door closed. Please come to the door and place package."/>
+          <Timeout msec="300000">
+            <AwaitDropOnConfirmation user="{sender_user}" />
+          </Timeout>
+        </Sequence>
+      </Fallback>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="GoToReceiver">
+    <Fallback>
+      <!-- Normal path -->
+      <Sequence>
+        <Parallel success_threshold="1" failure_threshold="1">
+          <Sequence>
+            <NavigateToDoor room="{receiver_room}"/>
+            <Fallback>
+              <NavigateIntoRoom room="{receiver_room}"/>
+              <Sequence>
+                <Notify text="Door closed. Please come to the door to pick up."/>
+                <Timeout msec="300000">
+                  <AwaitPickupConfirmation user="{receiver_user}" />
+                </Timeout>
+              </Sequence>
+            </Fallback>
+          </Sequence>
+          <QueueHandler/>
+        </Parallel>
+      </Sequence>
+
+      <!-- Fallback: destination inaccessible -> return to sender -->
+      <Sequence>
+        <Notify text="Destination inaccessible. Returning package to sender."/>
+        <NavigateToDoor room="{sender_room}"/>
+        <Fallback>
+          <NavigateIntoRoom room="{sender_room}"/>
+          <Sequence>
+            <Notify text="Please take back the package and confirm."/>
+            <Timeout msec="300000">
+              <AwaitDropOnConfirmation user="{sender_user}" />
+            </Timeout>
+          </Sequence>
+        </Fallback>
+      </Sequence>
+
+      <!-- Fallback: sender also inaccessible -> incident -->
+      <Sequence>
+        <Notify text="Sender inaccessible. Creating incident and waiting at monitor."/>
+      </Sequence>
+    </Fallback>
+  </BehaviorTree>
+</root>
