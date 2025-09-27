@@ -13,7 +13,7 @@ The primary goal is to develop and simulate a robot delivery system using Turtle
   2. **`submission_files/`** – Corresponding files submitted for that assignment.  
   These are included so that viewers can explore the step-by-step progress and development process.
 - **`worksheets/`** – A collection of worksheets covering the entire implementation and assignments, serving as a reference and study material.
-   -- *`installation_instructions/`* - Guide to all the necessary installation setup
+    *`installation_instructions/`* - Guide to all the necessary installation setup
 
 ## Resources Used
 - **TurtleBot4 Manual**: [https://turtlebot.github.io/turtlebot4-user-manual/software/turtlebot4_common.html](https://turtlebot.github.io/turtlebot4-user-manual/software/turtlebot4_common.html)  
