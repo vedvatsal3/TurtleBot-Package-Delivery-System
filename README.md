@@ -33,7 +33,7 @@ Follow these step-by-step to set up your environment and run the project success
   ```bash
   ros2 run delivery_interface delivery_commander
   
- ###2: Advanced Multi-Terminal  
+ 2: Advanced Multi-Terminal  
 - **digferent terminals for server and clients(sender and receiver), secure system with IDs, PINs, battery management, and optimized failure handling**
 - **Location**: `ss-25-secoro-assignments-team-2/assignment04/submission_files/secoro2_delivery_system/src/servers`
 - **Command to run**: 
